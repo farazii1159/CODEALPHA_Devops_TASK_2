@@ -1,0 +1,34 @@
+version: '3.8'
+
+networks:
+  jenkins-net:
+    driver: bridge
+
+services:
+  # The Jenkins Controller (The Brain)
+  jenkins-controller:
+    image: jenkins/jenkins:lts
+    container_name: jenkins-controller
+    ports:
+      - "8080:8080"
+      - "50000:50000" # Required for inbound agent communication
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    networks:
+      - jenkins-net
+
+  # Agent 1: Isolated x86 Linux Architecture
+  jenkins-agent-x86:
+    image: jenkins/inbound-agent:latest
+    container_name: jenkins-agent-1
+    environment:
+      - JENKINS_URL=http://jenkins-controller:8080
+      - JENKINS_SECRET=777688176081fd4f7d0c0aa6e175a8f1f69dd63e4f24bab550d5d343fffc693d 
+      - JENKINS_AGENT_NAME=agent-x86
+    networks:
+      - jenkins-net
+    depends_on:
+      - jenkins-controller
+
+volumes:
+  jenkins_home:
