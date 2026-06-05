@@ -56,7 +56,7 @@ As outlined in the internship requirements, this project successfully fulfills t
 
 ### Step 6: Designing & Executing the Remote Pipeline
 * Wrote a declarative Jenkins Pipeline targeted specifically to run on the isolated architecture:
-    ```groovy
+```groovy
     pipeline {
         agent { label 'x86-architecture' }
         stages {
@@ -84,10 +84,7 @@ Make sure you have the following tools installed on your operating system:
 ### Step 1: Clone the Repository
 Open your terminal (Git Bash, VS Code Terminal, or Command Prompt) and clone this repository down to your local machine:
 ```bash
-# Clone the repository directly
 git clone [https://github.com/farazii1159/CODEALPHA_Devops_TASK_2.git](https://github.com/farazii1159/CODEALPHA_Devops_TASK_2.git)
-
-# Move into the project root directory
 cd CODEALPHA_Devops_TASK_2
 
 Step 2: Launch the Infrastructure
@@ -140,39 +137,49 @@ Click New Item on the top-left sidebar menu, name your job Task2-Execution-Test,
 Scroll right down to the Pipeline Script code block section at the bottom, paste this automated script test workflow, and hit Save:
 
 Groovy
-pipeline {
-    agent { label 'x86-architecture' }
-    stages {
-        stage('Verify Isolation & Architecture') {
-            steps {
-                echo 'Successfully executing pipeline code inside the isolated agent node!'
-                sh 'uname -a'
+    pipeline {
+        agent { label 'x86-architecture' }
+        stages {
+            stage('Verify Isolation & Architecture') {
+                steps {
+                    echo 'Successfully executing pipeline code inside the isolated agent node!'
+                    sh 'uname -a'
+                }
             }
         }
     }
-}
-Click Build Now. Once the process completes, navigate directly inside the build job numbers link to review its Console Output. You will see it successfully offloaded execution onto agent-x86 and completed with an error-free Finished: SUCCESS status output!
+    ```
+3. Click **Build Now**. Once the process completes, navigate directly inside the build job numbers link to review its **Console Output**. You will see it successfully offloaded execution onto `agent-x86` and completed with an error-free `Finished: SUCCESS` status output!
 
+---
 
-🔒 Security & Optimization Highlights
-Controller Isolation: By enforcing node execution on agent-x86, the main Jenkins Controller configurations, credentials, and plugins are completely isolated from potentially malicious or resource-heavy build scripts.
+## 🔒 Security & Optimization Highlights
+* **Controller Isolation:** By enforcing node execution on `agent-x86`, the main Jenkins Controller configurations, credentials, and plugins are completely isolated from potentially malicious or resource-heavy build scripts.
+* **Load Balancing:** Heavy compiler or test loads are distributed to remote execution planes, ensuring high availability of the master Jenkins dashboard.
 
-Load Balancing: Heavy compiler or test loads are distributed to remote execution planes, ensuring high availability of the master Jenkins dashboard.
+---
 
-📊 Task Verification & Screenshots
-1. Initial Administrator Setup
+## 📊 Task Verification & Screenshots
+
+### 1. Initial Administrator Setup
 Verification of the initial Jenkins setup deployment wizard, establishing the primary admin credentials.
+![Jenkins User Setup](./Images/jenkins%20user.JPG)
 
-2. Docker Desktop Cached Images (d-images)
+### 2. Docker Desktop Cached Images
 Verification of downloaded Docker images inside the local environment library plane.
+![Docker Images](./Images/d-images.JPG)
 
-3. Docker Desktop Running Container Infrastructure (d-containers)
+### 3. Docker Desktop Running Container Infrastructure
 Verification of active container groups securely running the isolated infrastructure stack.
+![Docker Containers](./Images/d-containers.JPG)
 
-4. Connected Nodes Dashboard (Connection Success)
-Verification that the agent-x86 node is fully authenticated, connected, and "In sync" with the controller via Jenkins Remoting.
+### 4. Connected Nodes Dashboard (Connection Success)
+Verification that the `agent-x86` node is fully authenticated, connected, and "In sync" with the controller via Jenkins Remoting.
+![Jenkins Connected Nodes](./Images/jenkins%20ss.JPG)
 
-5. Successful Pipeline Console Execution
-The successful pipeline build log showing the workload offloaded to agent-x86 inside the isolated environment, executing uname -a and completing with a SUCCESS status.
+### 5. Successful Pipeline Console Execution
+The successful pipeline build log showing the workload offloaded to `agent-x86` inside the isolated environment, executing `uname -a` and completing with a SUCCESS status.
+![Pipeline Execution Success](./Images/jenkins%20ss2.JPG)
 
-Submitted by: Faraz Shabbir (DevOps Intern at CodeAlpha)
+---
+**Submitted by:** Faraz Shabbir (DevOps Intern at CodeAlpha)
