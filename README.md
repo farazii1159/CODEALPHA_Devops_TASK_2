@@ -163,7 +163,7 @@ Groovy
 
 ### 1. Initial Administrator Setup
 Verification of the initial Jenkins setup deployment wizard, establishing the primary admin credentials.
-![Jenkins User Setup](./Images/jenkins%20user.JPG)
+![Jenkins User Setup](./Images/jenkins-user.JPG)
 
 ### 2. Docker Desktop Cached Images
 Verification of downloaded Docker images inside the local environment library plane.
@@ -175,11 +175,11 @@ Verification of active container groups securely running the isolated infrastruc
 
 ### 4. Connected Nodes Dashboard (Connection Success)
 Verification that the `agent-x86` node is fully authenticated, connected, and "In sync" with the controller via Jenkins Remoting.
-![Jenkins Connected Nodes](./Images/jenkins%20ss.JPG)
+![Jenkins Connected Nodes](./Images/jenkins-ss.JPG)
 
 ### 5. Successful Pipeline Console Execution
 The successful pipeline build log showing the workload offloaded to `agent-x86` inside the isolated environment, executing `uname -a` and completing with a SUCCESS status.
-![Pipeline Execution Success](./Images/jenkins%20ss2.JPG)
+![Pipeline Execution Success](./Images/jenkins-ss2.JPG)
 
 ---
 **Submitted by:** Faraz Shabbir (DevOps Intern at CodeAlpha)
