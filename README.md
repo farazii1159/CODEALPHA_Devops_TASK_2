@@ -202,6 +202,12 @@ Jenkins Agent (inbound-agent container)
         ▼
 Pipeline Execution (x86 Label)
 
+
+This architecture demonstrates a **Controller-Agent model** where:
+- Jenkins Controller manages jobs
+- Agent executes workloads
+- Docker provides container isolation
+
 ---
 
 ## 🔒 Security & Optimization Highlights
