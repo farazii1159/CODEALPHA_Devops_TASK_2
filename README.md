@@ -13,7 +13,7 @@ Below is the official task description provided by CodeAlpha:
 As outlined in the internship requirements, this project successfully fulfills the following milestones:
 * **Set up Jenkins Remoting** to seamlessly connect remote Jenkins nodes.
 * **Distribute build loads** across different machines securely.
-* **Run jobs on various architectures** remotely.
+* **Run jobs on a dedicated Jenkins remote agent using Jenkins Remoting.** remotely.
 * **Improve security** using strict node isolation.
 * **Gain hands-on experience** with Jenkins’ remote execution capabilities.
 
@@ -164,7 +164,7 @@ It connects using:
 ---
 
 ### ⚠️ Note:
-This project includes a hardcoded Jenkins secret in docker-compose.yml for demonstration purposes only. In production, secrets should be managed using environment variables or secret management tools.
+This project includes a hardcoded Jenkins secret in **docker-compose.yml** for demonstration purposes only. In production, secrets should be managed using environment variables or secret management tools.
 
 Go back to http://localhost:8080/manage/computer/, refresh the page, and you will see agent-x86 turn online and display an "In sync" state status confirmation icon.
  
@@ -244,5 +244,4 @@ The successful pipeline build log showing the workload offloaded to `agent-x86` 
 - Company: [CodeAlpha](https://www.linkedin.com/company/codealpha/)
 
 ---
-**Submitted by:** Faraz Shabbir (CodeAlpha DevOps Program Participant)
-
+**Submitted as part of CodeAlpha DevOps Internship Program**
