@@ -98,12 +98,12 @@ CODEALPHA_DEVOPS_TASKS_2/
  💻 Quick Start Guide: How to Clone & Run This Project Locally
 
 Follow these clear instructions to replicate this entire distributed environment on your own local setup.
-
+```
 ### Prerequisites
 Make sure you have the following tools installed on your operating system:
 * [Git](https://git-scm.com/)
 * [Docker Desktop](https://www.docker.com/products/desktop/) (with Docker Compose enabled)
-
+```
 ---
 ```
 ### Step 1: Clone the Repository
