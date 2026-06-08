@@ -177,6 +177,7 @@ Verification of active container groups securely running the isolated infrastruc
 Verification that the `agent-x86` node is fully authenticated, connected, and "In sync" with the controller via Jenkins Remoting.
 ![Jenkins Connected Nodes](./Images/jenkins-ss.JPG)
 
+
 ### 5. Successful Pipeline Console Execution
 The successful pipeline build log showing the workload offloaded to `agent-x86` inside the isolated environment, executing `uname -a` and completing with a SUCCESS status.
 ![Pipeline Execution Success](./Images/jenkins-ss2.JPG)
