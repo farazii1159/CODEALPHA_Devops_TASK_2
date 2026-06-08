@@ -104,6 +104,7 @@ Make sure you have the following tools installed on your operating system:
 * [Git](https://git-scm.com/)
 * [Docker Desktop](https://www.docker.com/products/desktop/) (with Docker Compose enabled)
 
+---
 ```
 ### Step 1: Clone the Repository
 Open your terminal (Git Bash, VS Code Terminal, or Command Prompt) and clone this repository down to your local machine:
@@ -111,7 +112,7 @@ Open your terminal (Git Bash, VS Code Terminal, or Command Prompt) and clone thi
 git clone https://github.com/farazii1159/CODEALPHA_Devops_TASK_2.git
 cd CODEALPHA_Devops_TASK_2
 ```
-
+---
 ### Step 2: Launch the Infrastructure
 Run Docker Compose to pull the official images and spin up the environment containers automatically in the background:
 
@@ -121,6 +122,7 @@ docker compose up -d
 
 This command starts up the Jenkins Controller, which manages pipeline execution and agent communication within the distributed CI/CD environment.
 
+---
 ### Step 3: Unlock & Access Localhost Jenkins
 Open your web browser and go to: http://localhost:8080
 
@@ -132,6 +134,7 @@ docker compose logs jenkins-controller
 
 Copy the long alpha-numeric key string, paste it into the Jenkins browser tab setup page, select Install Suggested Plugins, and create your primary admin profile.
 
+---
 ### Step 4: Register the Inbound Agent Node
 Inside Jenkins UI, navigate to Manage Jenkins -> Nodes -> New Node.
 
@@ -164,6 +167,7 @@ docker run --init -d \
 
 Go back to http://localhost:8080/manage/computer/, refresh the page, and you will see agent-x86 turn online and display an "In sync" state status confirmation icon.
  
+ ---
 ### Step 6: Create and Verify Your Test Pipeline
 Click New Item on the top-left sidebar menu, name your job Task2-Execution-Test, pick Pipeline, and click OK.
 
