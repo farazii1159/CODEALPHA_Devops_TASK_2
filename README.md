@@ -217,18 +217,6 @@ pipeline {
 
 ---
 
-## 👨‍💻 Author
-
-**Faraz Shabbir**
-
-GitHub: https://github.com/farazii1159
-
-LinkedIn: https://linkedin.com/in/faraz-shabbir-5a9227344
-
-DevOps Intern at CodeAlpha
-
----
-
 ## 📊 Task Verification & Screenshots
 
 ### 1. Initial Administrator Setup
@@ -251,6 +239,18 @@ Verification that the `agent-x86` node is fully authenticated, connected, and "I
 ### 5. Successful Pipeline Console Execution
 The successful pipeline build log showing the workload offloaded to `agent-x86` inside the isolated environment, executing `uname -a` and completing with a SUCCESS status.
 ![Pipeline Execution Success](./Images/jenkins-ss2.JPG)
+
+---
+
+## 👨‍💻 Author
+
+**Faraz Shabbir**
+
+GitHub: https://github.com/farazii1159
+
+LinkedIn: https://linkedin.com/in/faraz-shabbir-5a9227344
+
+DevOps Intern at CodeAlpha
 
 ---
 **Submitted by:** Faraz Shabbir (DevOps Intern at CodeAlpha)
