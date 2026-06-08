@@ -80,8 +80,9 @@ CODEALPHA_DEVOPS_TASKS_2/
 ### Step 6: Designing & Executing the Remote Pipeline
 * Wrote a declarative Jenkins Pipeline targeted specifically to run on the isolated architecture:
 ```groovy
-    pipeline {
+pipeline {
         agent { label 'x86-architecture' }
+        
         stages {
             stage('Verify Isolation & Architecture') {
                 steps {
@@ -209,14 +210,6 @@ pipeline {
 
 ---
 
-## 🔒 Security & Optimization Highlights
-
-* **Controller Isolation:** By enforcing node execution on `agent-x86`, the main Jenkins Controller configurations, credentials, and plugins remain isolated from potentially resource-intensive or untrusted build workloads.
-
-* **Load Balancing:** Heavy build, test, and deployment workloads are distributed to remote agents, ensuring high availability of the Jenkins Controller dashboard.
-
----
-
 ## 📊 Task Verification & Screenshots
 
 ### 1. Initial Administrator Setup
@@ -246,9 +239,8 @@ The successful pipeline build log showing the workload offloaded to `agent-x86` 
 
 **Faraz Shabbir**
 
-GitHub: https://github.com/farazii1159
-
-LinkedIn: https://linkedin.com/in/faraz-shabbir-5a9227344
+- GitHub: [farazii1159](https://github.com/farazii1159)
+- LinkedIn: [Faraz Shabbir](https://linkedin.com/in/faraz-shabbir-5a9227344)
 
 DevOps Intern at CodeAlpha
 
