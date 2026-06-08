@@ -242,7 +242,10 @@ The successful pipeline build log showing the workload offloaded to `agent-x86` 
 - GitHub: [farazii1159](https://github.com/farazii1159)
 - LinkedIn: [Faraz Shabbir](https://linkedin.com/in/faraz-shabbir-5a9227344)
 
-DevOps Intern at CodeAlpha
+
+- Organization / Affiliation: CodeAlpha
+
+- Company: https://www.linkedin.com/company/codealpha/
 
 ---
-**Submitted by:** Faraz Shabbir (DevOps Intern at CodeAlpha)
+**Submitted by:** Faraz Shabbir (DevOps Tasks CodeAlpha)
