@@ -163,7 +163,7 @@ docker run --init -d \
 ```
 
 Go back to http://localhost:8080/manage/computer/, refresh the page, and you will see agent-x86 turn online and display an "In sync" state status confirmation icon.
----
+
 ### Step 6: Create and Verify Your Test Pipeline
 Click New Item on the top-left sidebar menu, name your job Task2-Execution-Test, pick Pipeline, and click OK.
 
