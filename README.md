@@ -90,9 +90,11 @@ CODEALPHA_DEVOPS_TASKS_2/
             }
         }
     }
-    ```
-
+    
+```
 * Executed the job and verified through the console output that the build was securely offloaded from the Controller and processed inside the isolated x86 environment.
+```
+---
 
 ```
 ### 💻 Quick Start Guide: How to Clone & Run This Project Locally
