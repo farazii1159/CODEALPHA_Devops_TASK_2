@@ -104,7 +104,7 @@ Make sure you have the following tools installed on your operating system:
 * [Git](https://git-scm.com/)
 * [Docker Desktop](https://www.docker.com/products/desktop/) (with Docker Compose enabled)
 ```
----
+
 ```
 ### Step 1: Clone the Repository
 Open your terminal (Git Bash, VS Code Terminal, or Command Prompt) and clone this repository down to your local machine:
