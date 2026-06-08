@@ -13,7 +13,7 @@ Below is the official task description provided by CodeAlpha:
 As outlined in the internship requirements, this project successfully fulfills the following milestones:
 * **Set up Jenkins Remoting** to seamlessly connect remote Jenkins nodes.
 * **Distribute build loads** across different machines securely.
-* **Run jobs on a dedicated Jenkins remote agent using Jenkins Remoting.** remotely.
+* **Run jobs on a dedicated Jenkins remote agent using Jenkins Remoting.**
 * **Improve security** using strict node isolation.
 * **Gain hands-on experience** with Jenkins’ remote execution capabilities.
 
@@ -28,24 +28,20 @@ As outlined in the internship requirements, this project successfully fulfills t
 
 ---
 
-✨ Key Features
-Jenkins Controller-Agent Architecture
-Jenkins Remoting (JNLP)
-Secure Agent Isolation
-Distributed Pipeline Execution
-Docker-Based Deployment
+## ✨ Key Features
+
+- Jenkins Controller-Agent Architecture
+- Jenkins Remoting (JNLP)
+- Secure Container-based Isolation
+- Distributed Pipeline Execution
+- Docker-Based Deployment
 
 ---
 📂 Repository Structure
-CODEALPHA_DEVOPS_TASKS_2/
-├── .git/
+## 📂 Repository Structure
+
+CODEALPHA_Devops_TASK_2/
 ├── Images/
-│   ├── CodeAplha-Task-2.JPG
-│   ├── d-containers.JPG
-│   ├── d-images.JPG
-│   ├── jenkins-ss.JPG
-│   ├── jenkins-ss2.JPG
-│   └── jenkins-user.JPG
 ├── docker-compose.yml
 └── README.md
 
@@ -115,6 +111,8 @@ git clone https://github.com/farazii1159/CODEALPHA_Devops_TASK_2.git
 cd CODEALPHA_Devops_TASK_2
 ```
 ---
+
+
 ### Step 2: Launch the Infrastructure
 Run Docker Compose to pull the official images and spin up the environment containers automatically in the background:
 
@@ -190,6 +188,19 @@ pipeline {
 ```
 
 3. Click **Build Now**. Once the process completes, navigate directly inside the build job numbers link to review its **Console Output**. You will see it successfully offloaded execution onto `agent-x86` and completed with an error-free `Finished: SUCCESS` status output!
+
+---
+### 🚀 Architecture Overview
+Jenkins Controller (Docker Container)
+        │
+        ▼
+Docker Network (jenkins-net)
+        │
+        ▼
+Jenkins Agent (inbound-agent container)
+        │
+        ▼
+Pipeline Execution (x86 Label)
 
 ---
 
