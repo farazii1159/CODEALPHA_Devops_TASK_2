@@ -156,7 +156,7 @@ Configure the agent screen properties with the exact values below:
 ---
 ### Step 5: Jenkins Agent Deployment (Docker Compose Managed)
 
-The Jenkins inbound agent is automatically started using docker-compose.yml.
+The Jenkins inbound agent is automatically started using **docker-compose.yml**.
 
 It connects using:
 - JENKINS_URL
