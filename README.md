@@ -191,16 +191,19 @@ pipeline {
 
 ---
 ### 🚀 Architecture Overview
-Jenkins Controller (Docker Container)
-        │
-        ▼
+JJenkins Controller (Docker Container)
+│
+│ HTTP (8080)
+▼
 Docker Network (jenkins-net)
-        │
-        ▼
+│
+│ Jenkins Remoting / Agent Connection
+▼
 Jenkins Agent (inbound-agent container)
-        │
-        ▼
-Pipeline Execution (x86 Label)
+│
+│ Executes Pipeline Jobs
+▼
+Build Execution (x86 Label Node)
 
 
 This architecture demonstrates a **Controller-Agent model** where:
