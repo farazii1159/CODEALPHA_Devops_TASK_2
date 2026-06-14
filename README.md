@@ -44,7 +44,7 @@ CODEALPHA_Devops_TASK_2/
 ├── Images/
 ├── docker-compose.yml
 └── README.md
-
+.
 ## 🚀 Step-by-Step Implementation (How I Built It)
 
 ### Step 1: Networking & Virtualization Setup
